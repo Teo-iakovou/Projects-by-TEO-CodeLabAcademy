@@ -1,0 +1,404 @@
+body {
+  background-color: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+  height: 30px;
+  margin-right: 1px;
+}
+
+nav p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  color: #23155b;
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-links a {
+  margin: 0 15px;
+  color: #23155b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+nav .join-button {
+  background-color: #8053ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Noto Sans Khojki", sans-serif;
+}
+
+nav .join-button:hover {
+  background-color: #6642cc;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.hero-section h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #23155b;
+  font-family: "Noto Sans Khojki", sans-serif;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #817d8e;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+}
+.leftbtn {
+  background-color: #8053ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Martel Sans", sans-serif;
+  text-decoration: none;
+}
+.rightbtn {
+  background-color: white;
+  color: #8053ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 10px;
+  font-family: "Martel Sans", sans-serif;
+  text-decoration: none;
+}
+
+.hero-buttons :hover {
+  background-color: #191047;
+}
+
+/* Practice Section */
+.practice-section {
+  text-align: center;
+  font-family: "Martel Sans", sans-serif;
+  color: #5f4b8b;
+}
+
+.practice-section h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #8053ff;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.practice-options {
+  display: grid;
+  justify-content: center;
+  grid-auto-columns: 300px;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4";
+  gap: 40px 20px;
+}
+.practice-box1 {
+  grid-area: box1;
+}
+.practice-box2 {
+  grid-area: box2;
+}
+.practice-box3 {
+  grid-area: box3;
+}
+.practice-box4 {
+  grid-area: box4;
+}
+
+.practice-options > div {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+/* Gain Section */
+.gain-section {
+  padding-top: 50px;
+  background-color: #f4f4f4;
+  font-family: "Martel Sans", sans-serif;
+}
+
+#FONT {
+  color: black;
+  font-size: 50px;
+  margin-bottom: -15px;
+}
+
+#for-coders {
+  color: #8053ff;
+  font-weight: bold;
+  margin-bottom: -50px;
+}
+#gain {
+  color: #8053ff;
+}
+
+.gain-section p {
+  color: #817d8e;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.grey {
+  color: #191047;
+}
+.gain-options {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6";
+  gap: 20px;
+  color: #817d8e;
+  position: relative;
+}
+
+.gain-card1 {
+  grid-area: card1;
+}
+.gain-card2 {
+  grid-area: card2;
+}
+.gain-card3 {
+  grid-area: card3;
+}
+.gain-card4 {
+  grid-area: card4;
+}
+.gain-card5 {
+  grid-area: card5;
+}
+.gain-card6 {
+  grid-area: card6;
+}
+
+.gain-options > div {
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.gain-card1 img,
+.gain-card5 img,
+.gain-card3 img {
+  position: absolute;
+  right: 97.5%;
+}
+
+.gain-card4 img,
+.gain-card6 img,
+.gain-card2 img {
+  position: absolute;
+  right: 46.5%;
+}
+
+.btn-gain {
+  background-color: #8053ff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.btn-gain:hover {
+  background-color: #6840d0;
+}
+
+/* Manager Section */
+.manager-section {
+  padding-top: 50px;
+  background-color: #f4f4f4;
+  font-family: "Martel Sans", sans-serif;
+}
+.manager-section span {
+  color: #8053ff;
+}
+.manager-section h1 {
+  color: #8053ff;
+  margin-bottom: -40px;
+}
+.manager-section h2 {
+  font-size: 28px;
+  color: black;
+  font-family: "Martel Sans", sans-serif;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.manager-options {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "card7 card8"
+    "card9 card10"
+    "card11 card12";
+  gap: 20px;
+  color: #817d8e;
+  position: relative;
+}
+.manager-card7 img,
+.manager-card9 img,
+.manager-card11 img {
+  position: absolute;
+  right: 97.5%;
+}
+
+.manager-card8 img,
+.manager-card10 img,
+.manager-card12 img {
+  position: absolute;
+  right: 38.5%;
+}
+.manager-options > div {
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.btn-manager {
+  background-color: #8053ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Martel Sans", sans-serif;
+  margin-top: 20px;
+}
+
+.btn-manager:hover {
+  background-color: #6840d0;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  background-color: #f5f5f5;
+}
+.about-section span {
+  color: black;
+}
+
+#logo2 {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonial-section h3 {
+  font-size: 24px;
+  color: #8053ff;
+  font-family: "Martel Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.testimonial-section p {
+  font-size: 18px;
+  color: black;
+  font-family: "Martel Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.testimonial-section img {
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.testimonial-section h4 {
+  font-size: 20px;
+  color: #23155b;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #23155b;
+  color: white;
+  padding: 50px;
+  text-align: start;
+  font-family: "Noto Sans Khojki", sans-serif;
+  border-top-left-radius: 20%;
+}
+
+.footer > h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+footer input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Martel Sans", sans-serif;
+}
+
+footer button {
+  background-color: #8053ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Martel Sans", sans-serif;
+}
+
+footer button:hover {
+  background-color: #6642cc;
+}

@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Signin Page</title>
-</head>
-<body>
-    <div>
-        <img src="/Signup Page/coding (1).png" alt="CodingLogo" style="width: 250px;">
-    </div>
-    <div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <img
+          src="/coding.png"
+          alt="CodingLogo"
+          class="coding-logo">
+      </div>
+      <div class="right-section">
         <h3>Login Now!</h3>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button>Sing In</button>
+        <form>
+          <input type="email" placeholder="Email" required class="input-field" />
+          <input type="password" placeholder="Password" required class="input-field" />
+          <button type="submit" class="submit-button">Sing In</button>
+          <p>New to CodeCLA?<a href="#" class="singin-link">Login</a></p>
+        </form>
+      </div>
     </div>
-    <div>
-        <p>New to CodeCLA?<a href="" style="padding: 5px;">Login</a></p>
-    </div>
-</body>
+  </body>
 </html>
