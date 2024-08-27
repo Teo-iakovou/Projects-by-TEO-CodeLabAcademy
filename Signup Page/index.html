@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <span><img src="coding (1).png" alt="CodingLogo" style="width: 250px;"></span>
+    <div class="container">
+        <div class="left-section">
+        <img src="/coding.png" alt="CodingLogo" >
+    </div>
+    <div class="right-section">
         <h3>Join Coders Now!</h3>
-    </div>
-    <div>
-        <span>
-            <input type="text" placeholder="FirstName" required>
-            <input type="text" placeholder="LastName" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-           <span> <button>Sing Up</button></span>
-        </span>
-       <p>Already have an account?<a style="padding: 5px;" href="">Login</a></p>
-  
-    </div>
+        <form>
+            <input type="text" placeholder="First Name" required class="input-field"/>
+            <input type="text" placeholder="Last Name" required class="input-field"/>
+            <input type="email" placeholder="Email" required class="input-field"/>
+            <input type="password" placeholder="Password" required class="input-field"/>
+            <button type="submit" class="submit-button">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+    </div> 
 </body>
 </body>
 </html>
