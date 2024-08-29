@@ -317,19 +317,38 @@ nav .join-button:hover {
 }
 
 /* About Section */
-.about-section {
+ .about-section{
   display: flex;
-  background-color: #f5f5f5;
-}
-.about-section span {
+  background-color: #f0f2f5;
+  align-items: center;
+ }
+ .about-section span{
   color: black;
-}
-
-#logo2 {
-  width: 60px;
-  margin-bottom: 20px;
-}
-
+ }
+ .right-section{
+  background-color: #f4f4f4;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+ }
+ .team-photo{
+  width: 70%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 70px;
+ }
+ .right-section span{
+  color: black;
+ }
 /* Testimonial Section */
 .testimonial-section {
   padding: 50px 20px;
@@ -402,3 +421,109 @@ footer button {
 footer button:hover {
   background-color: #6642cc;
 }
+
+/*mobile screen */
+@media only screen and (max-width: 440px) {
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav .nav-links {
+    flex-direction: row;
+  }
+
+  nav .nav-links a {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  nav .join-button {
+    margin-top: 10px;
+  }
+  .practice-section{
+    
+    text-align: center;
+  }
+/* Gain Section */
+  .gain-options {
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6";
+    gap: 15px;
+  }
+
+  .gain-options > div {
+    padding: 15px 20px;
+    
+  }
+
+  .gain-card1 img,
+  .gain-card2 img,
+  .gain-card3 img,
+  .gain-card4 img,
+  .gain-card5 img,
+  .gain-card6 img {
+    right: 95%;
+    
+  }
+
+  .btn-gain {
+    margin-top: 10px;
+  }
+
+  /* Manager Section */
+  .manager-options {
+    grid-template-areas:
+      "card7"
+      "card8"
+      "card9"
+      "card10"
+      "card11"
+      "card12";
+    gap: 15px;
+  }
+
+  .manager-options > div {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .manager-card7 img,
+  .manager-card8 img,
+  .manager-card9 img,
+  .manager-card10 img,
+  .manager-card11 img,
+  .manager-card12 img {
+    right: 95%;
+  }
+
+  .btn-manager {
+    margin-top: 10px;
+  }
+
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+  }
+
+  .right-section, 
+  .left-section {
+    padding: 20px;
+  }
+
+  .team-photo {
+    width: 100%;
+    border-radius: 50px;
+  }
+}
+
+
+
