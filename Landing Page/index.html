@@ -115,17 +115,22 @@
     <footer>
     <div class="footer">
     <h2>Contact us</h2>
-    <label>Name<br /><input type="text" placeholder="Your Name" /></label>
+    <label>Name<br /><input id="name"  type="text" placeholder="Your Name" /></label>
+    <p class="error-message" id="name-error"></p>
     <br />
-    <label>Email<br /><input type="email" placeholder="Your email" /></label>
+    <label>Email<br /><input  id="email" type="email" placeholder="Your email" /></label>
+    <p class="error-message" id="email-error"></p>
     <br />
-    <label>Message<br /><input type="text" placeholder="Your Message" /></label>
+    <label>Message<br /><input id="message" type="text" placeholder="Your Message" /></label>
+    <p class="error-message" id="message-error"></p>
     <br />
-    <button type="submit">Submit</button>
+    <button type="submit" id="submit-btn">Submit</button>
     <p>© <span id="copyright-year"></span> CodeCLA</p>
     </div>
 </footer>
 <script src="form.js"></script>
+ <!-- SweetAlert2 CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
 </body>

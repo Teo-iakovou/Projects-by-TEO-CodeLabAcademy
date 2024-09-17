@@ -419,3 +419,9 @@ footer button {
 footer button:hover {
   background-color: #6642cc;
 }
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
