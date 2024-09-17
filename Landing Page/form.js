@@ -36,7 +36,7 @@
 
     // Function to update the testimonial content
     function updateTestimonial(index) {
-      const testimonial = testimonials[index];
+      const testimonial = testimonials[index]
       document.getElementById('testimonial-text').innerText = testimonial.text;
       document.getElementById('testimonial-img').src = testimonial.photo;
       document.getElementById('testimonial-name').innerText = testimonial.name;
@@ -62,3 +62,8 @@
     document.getElementById('prev-btn').addEventListener('click', prevTestimonial);
   
     updateTestimonial(currentTestimonialIndex);
+
+    // Copyright year
+    const currentYear=new Date().getFullYear();
+    document.getElementById("copyright-year").innerText=currentYear;
+
