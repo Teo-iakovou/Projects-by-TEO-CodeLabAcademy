@@ -347,6 +347,7 @@ nav .join-button:hover {
   color: black;
  }
 /* Testimonial Section */
+
 .testimonial-section {
   padding: 50px 20px;
   background-color: #f4f4f4;
@@ -417,4 +418,69 @@ footer button {
 
 footer button:hover {
   background-color: #6642cc;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 440px){
+
+  /*Whole page*/
+  *{
+    padding: 0;
+  }
+
+  /* Navigation */
+  nav {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  nav p {
+    margin-bottom: 25px;
+  }
+  
+
+  /* Hero Section */
+  /* Practice Section */
+  .practice-options {
+    grid-auto-columns: auto;
+  }
+  /* Gain Section */
+  .gain-card1 img,
+.gain-card5 img,
+.gain-card3 img {
+  position: absolute;
+  right: 92.5%;
+}
+.gain-card4 img,
+.gain-card6 img,
+.gain-card2 img {
+  position: absolute;
+  right: 38%;
+}
+  /* Manager Section */
+  .manager-card7 img,
+.manager-card9 img,
+.manager-card11 img {
+  position: absolute;
+  right: 92.5%;
+}
+
+  /* About Section */
+  .about-section{
+    display: flex;
+   flex-direction: column-reverse;
+   }
+
+   .team-photo{
+    border-radius: 70px;
+   }
+
+
+
 }

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Landing Page with Css</title>
-    <script src="form.js"></script>
 </head>
 <body>
     <header>
@@ -84,8 +83,8 @@
       <div class="manager-card11"><img src="/ok.svg" rel="ok.logo">Collaborate with collegues or peers in creating and refinig coding
         challenges</div>
       <div class="manager-card12"><img src="/ok.svg" rel="ok.logo">Acces dedicated support from our team of experts</div>
-      <button class="btn-manager">Join managers community</button>
     </div>
+    <button class="btn-manager">Join managers community</button></section>
 <!--About Section-->
     <div class="about-section">
      <div class="right-section">
@@ -99,36 +98,40 @@
       <img src="/team.svg" rel="team.photo" class="team-photo" >
     </div>
     </div>
+     <!--Testimonial Section-->
     <section>
-        <!--Testimonial Section-->
     <div class="testimonial-section">
       <h3>Testimonials</h3>
-      <p>This platform is an absolute game-changer for competitive programmers.
-        The extensive range of problems and challenges offered here truly hones
-        your skills and prepares you for any coding competition. With detailed
-        solutions and an active community, it's the perfect environment to
-        sharpen your coding prowess.</p>
-      <img src="https://randomuser.me/api/portraits/women/44.jpg"
-        alt="Photo Woman"/>
-      <h4>June Cha</h4>
-      <p>Software Enginner</p>
+      <p id="testimonial-text"></p>
+      <img id="testimonial-img" src="" alt="Photo"/>
+      <h4 id="testimonial-name"></h4>
+      <p id="testimonial-position"></p>
+      <!-- Testimonial Buttons -->
+      <button id="prev-btn" class="dot">Previous</button>
+      <button id="next-btn" class="dot">Next</button>
     </div>
 </section>
 <!--Footer-->
     <footer>
     <div class="footer">
     <h2>Contact us</h2>
-    <label>Name<br /><input type="text" placeholder="Your Name" /></label>
+    <label>Name<br /><input id="name"  type="text" placeholder="Your Name" /></label>
+    <p class="error-message" id="name-error"></p>
     <br />
-    <label>Email<br /><input type="email" placeholder="Your email" /></label>
+    <label>Email<br /><input  id="email" type="email" placeholder="Your email" /></label>
+    <p class="error-message" id="email-error"></p>
     <br />
-    <label>Message<br /><input type="text" placeholder="Your Message" /></label>
+    <label>Message<br /><input id="message" type="text" placeholder="Your Message" /></label>
+    <p class="error-message" id="message-error"></p>
     <br />
-    <button type="submit">Submit</button>
+    <button type="submit" id="submit-btn">Submit</button>
+    <p>© <span id="copyright-year"></span> CodeCLA</p>
     </div>
 </footer>
+<script src="form.js"></script>
+ <!-- SweetAlert2 CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
-
 </body>
 </html>
