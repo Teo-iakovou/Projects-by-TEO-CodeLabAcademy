@@ -3,25 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet">
     <title>Signin Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body  class="font-sans flex justify-center items-center ">
-   
-    <div class="flex w-3/5 shadow-lg rounded ">
-      <div class="bg-purple-500 flex justify-center items-center w-1/2 p-5">
-        <img
-        src="/Pics/coding.png"
-          alt="CodingLogo"
-          >
+  <body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="flex w-3/5 shadow-lg rounded-lg overflow-hidden">
+      <!-- Left Section -->
+      <div class="bg-purple-900 flex justify-center items-center w-1/2 p-8">
+        <img src="/Pics/coding.png" alt="CodingLogo" class="w-64 h-auto" />
       </div>
-      <div class="bg-white flex flex-col justify-center items-center">
-        <h3 class="text-purple-500 mb-8 text-lg font-extrabold">Login Now!</h3>
-        <form>
-          <input  class=" p-2 mb-4 shadow-lg border border-gray-800 rounded-md text-lg bg-[#2c2b63] text-white" type="email" placeholder="Email" required  />
-          <input  class=" p-2 mb-4 shadow-lg border border-gray-800 rounded-md text-lg bg-[#2c2b63] text-white" type="password" placeholder="Password" required  />
-          <br/><button class=" p-3 shadow-lg  text-black rounded-md text-sm mt-3 hover:bg-[#4e41a2] cursor-pointer" type="submit" >Sing In</button>
-          <p class="mt-6 text-sm">New to CodeCLA?<a class="text-[#2c05ee] font-bold ml-1 hover:underline" href="#" >Login</a></p>
+
+      <!-- Right Section -->
+      <div
+        class="bg-white w-1/2 p-10 flex flex-col justify-center items-center"
+      >
+        <h3 class="text-purple-600 mb-6 text-2xl">Login Now!</h3>
+        <form class="w-full">
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            class="w-full p-2 mb-4 border rounded-md bg-gray-100"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            class="w-full p-2 mb-4 border rounded-md bg-gray-100"
+          />
+          <button
+            type="submit"
+            class="w-full p-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition mt-4"
+          >
+            Sign In
+          </button>
+          <p class="text-sm mt-4">
+            New to CodeCLA?
+            <a href="#" class="text-indigo-600 font-bold hover:underline ml-2"
+              >Sign Up</a
+            >
+          </p>
         </form>
       </div>
     </div>
