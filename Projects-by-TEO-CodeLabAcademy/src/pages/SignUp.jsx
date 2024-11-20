@@ -1,6 +1,5 @@
 import React from "react";
 import { login } from "../redux/slices/authSlice";
-
 import codingLogo from "../assets/coding.png";
 import { useForm } from "react-hook-form";
 import { z } from "zod";

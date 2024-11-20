@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/home";
+import LeaderBoard from "./pages/leaderboard";
 import ProtectedRoute from "./_components/ProtectedRoute";
 
 const App = () => {
@@ -24,6 +25,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/leaderboard"
+          element={
+            <ProtectedRoute>
+              <LeaderBoard />
             </ProtectedRoute>
           }
         />
